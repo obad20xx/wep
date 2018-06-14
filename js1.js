@@ -28,7 +28,25 @@ function showSlides() {
     setTimeout(showSlides, 5000);
 }
 
-function getData(){
+function signIn(){
+  if(document.getElementById('user').value == null || document.getElementById('user').value == "" ||
+  document.getElementById('pass').value == null || document.getElementById('pass').value == "")
+  alert("please fill the USERNAME and PASSWORD !!");
+  else{
   var userName = document.getElementById('user').value;
   var passWard = document.getElementById('pass').value;
+  alert("ther userName is : "+userName+" \n the password is : "+passWard);}
+
+
 }
+
+function signUp(){
+if(document.getElementById('user').value == null || document.getElementById('user').value == "" ||
+  document.getElementById('pass').value == null || document.getElementById('pass').value == "")
+  alert("please fill the USERNAME and PASSWORD !!");
+  else{
+  var userName = document.getElementById('user').value;
+  var passWard = document.getElementById('pass').value;}
+}
+
+
